@@ -5,28 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shanel made this</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35da8f1ae7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <span class="logo"><a href="#">sb_</a></span>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#code">Code</a></li>
-        <li><a href="./design.html">Design</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Hi! I'm Shanel.</h1>
-        <h2>Full Stack Web Developer</h2>
-        <div class="btns">
-          <button class="contact-btn">Let's Talk</button>
-          <button class="code-btn">My Work <span class="arrow">→</span></button>
+    <div class="wrapper">
+      <header>
+        <span class="logo"><a href="#">sb_</a></span>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#skills">Skills & Experience</a></li>
+            <li><a href="#code">Coding</a></li>
+            <li><a href="./design.html">Designing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="hero-text">
+          <span class="accent-text">hello!</span>
+          <h1>I'm Shanel.</h1>
+          <h2>I build things for the web.</h2>
+          <p>Let's have a conversation!</p>
+          <div class="hero-btns">
+            <button class="contact-btn">
+              <a href="mailto: shanelbb@gmail.com" target="_blank"
+                >Reach out to me</a
+              >
+            </button>
+            <button class="code-btn">
+              <a href="#code">See my work <span class="arrow">→</span></a>
+            </button>
+          </div>
+          <div class="hero-socials">
+            <p>Check Out My</p>
+            <nav class="social-icons">
+              <span class="fa-brands fa-github"
+                ><a href="https://github.com/shanelbb"></a
+              ></span>
+              <span class="fa-brands fa-linkedin-in"
+                ><a href="https://www.linkedin.com/in/shanelbeebe/"></a
+              ></span>
+            </nav>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <div class="hero-img">
+          <img
+            src="./assets/portfolio-hero-img.png"
+            alt="Profile photo of Shanel"
+          />
+        </div>
+      </section>
+      <main>
+        <section class="skills-exp">
+          <div class="skills-exp-left">
+            <span class="accent-text">what I can do</span>
+            <h2 class="section-heading">Skills &</h2>
+            <h2 class="section-heading">Experience</h2>
+            <p>
+              A brief rundown of what I've learned and the experience I've
+              gained during my education and career.
+            </p>
+            <h3>Skills</h3>
+            <div class="skills">
+              <span>
+                <i class="fa-solid fa-code"></i>
+                <p>Front End Dev</p>
+              </span>
+              <span>
+                <i class="fa-brands fa-react"></i>
+                <p>React</p>
+              </span>
+              <span>
+                <i class="fa-brands fa-node-js"></i>
+                <p>Node.js</p>
+              </span>
+              <span>
+                <i class="fa-solid fa-database"></i>
+                <p>Databases</p>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+                <p>Git Workflow</p>
+              </span>
+              <span>
+                <i class="fa-regular fa-object-group"></i>
+                <p>Graphic Design</p>
+              </span>
+            </div>
+          </div>
+          <div class="skills-exp-right">
+            <h3>Experience</h3>
+            <div class="experience-entry">
+              <p class="dates">2023</p>
+              <div class="exp-details">
+                <h4>Intermediate Email Developer</h4>
+                <p class="company">Publicis Canada</p>
+              </div>
+            </div>
+            <div class="experience-entry">
+              <p class="dates">2022</p>
+              <div class="exp-details">
+                <h4>Software Developer</h4>
+                <p class="company">Heart & Stroke Foundation</p>
+              </div>
+            </div>
+            <div class="experience-entry">
+              <p class="dates">2021</p>
+              <div class="exp-details">
+                <h4>Jr. Web Designer</h4>
+                <p class="company">Geek Unicorn</p>
+              </div>
+            </div>
+            <div class="experience-entry">
+              <p class="dates">2021</p>
+              <div class="exp-details">
+                <h4>Web Development Bootcamp Grad</h4>
+                <p class="company">Juno College</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
