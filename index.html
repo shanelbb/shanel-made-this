@@ -22,6 +22,11 @@
     <div class="wrapper">
       <header>
         <span class="logo"><a href="#">sb_</a></span>
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
         <nav class="header-nav">
           <ul>
             <li><a href="#skills">Skills & Experience</a></li>
@@ -33,31 +38,33 @@
       </header>
       <main>
         <section class="hero">
-          <div class="hero-text">
-            <span class="accent-text">hello!</span>
-            <h1>I'm Shanel.</h1>
-            <h2>I build things for the web.</h2>
-            <p>Let's have a conversation!</p>
-            <div class="hero-btns">
-              <button class="contact-btn">
-                <a href="mailto: shanelbb@gmail.com" target="_blank"
-                  >Reach out to me</a
-                >
-              </button>
-              <button class="code-btn">
-                <a href="#code">See my work <span class="arrow">→</span></a>
-              </button>
-            </div>
-            <div class="hero-socials">
-              <p>Check Out My</p>
-              <nav class="social-icons">
-                <span class="fa-brands fa-github"
-                  ><a href="https://github.com/shanelbb"></a
-                ></span>
-                <span class="fa-brands fa-linkedin-in"
-                  ><a href="https://www.linkedin.com/in/shanelbeebe/"></a
-                ></span>
-              </nav>
+          <div class="hero-left">
+            <div class="hero-text">
+              <span class="accent-text">hello!</span>
+              <h1>I'm Shanel.</h1>
+              <h2>I build things for the web.</h2>
+              <p>Let's have a conversation!</p>
+              <div class="hero-btns">
+                <button class="contact-btn">
+                  <a href="mailto: shanelbb@gmail.com" target="_blank"
+                    >Reach out to me</a
+                  >
+                </button>
+                <button class="code-btn">
+                  <a href="#code">See my work <span class="arrow">→</span></a>
+                </button>
+              </div>
+              <div class="hero-socials">
+                <p>Check Out My</p>
+                <nav class="social-icons">
+                  <span class="fa-brands fa-github"
+                    ><a href="https://github.com/shanelbb"></a
+                  ></span>
+                  <span class="fa-brands fa-linkedin-in"
+                    ><a href="https://www.linkedin.com/in/shanelbeebe/"></a
+                  ></span>
+                </nav>
+              </div>
             </div>
           </div>
 
@@ -74,8 +81,9 @@
             <h2 class="section-heading">Skills &</h2>
             <h2 class="section-heading">Experience</h2>
             <p>
-              A brief rundown of what I've learned and the experience I've
-              gained during my education and career.
+              I've learned a lot during my education and career in tech. Here is
+              a sampling of some skills and experience I've picked up along the
+              way.
             </p>
             <h3>Skills</h3>
             <div class="skills">
@@ -124,7 +132,7 @@
             <div class="experience-entry">
               <p class="dates">2022</p>
               <div class="exp-details">
-                <h4>Software Developer</h4>
+                <h4>Software Developer - Email</h4>
                 <p class="company">Heart & Stroke Foundation</p>
               </div>
             </div>
@@ -192,8 +200,8 @@
         </section>
         <section id="design" class="design-projects">
           <div class="design-text">
-            <span class="accent-text">more i can do</span>
-            <h2>Design<br />Projects</h2>
+            <span class="accent-text">i design too!</span>
+            <h2>Graphic<br />Design</h2>
             <p>
               I received a diploma in Graphic Design and Interactive Media from
               Toronto Film School in 2019. I learned the fundamental principles
@@ -216,14 +224,17 @@
             <span class="accent-text">say hi!</span>
             <h2>Let's Discuss<br />Your Project</h2>
             <div class="email-info">
-              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:shanelbb@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
               <p><a href="mailto:shanelbb@gmail.com">shanelbb@gmail.com</a></p>
             </div>
             <div class="social-info">
-              <i class="fa-solid fa-hashtag"></i>
+              <a href="https://calendly.com/shanelbeebe"
+                ><i class="fa-solid fa-calendar"></i
+              ></a>
               <p>
-                <a href="https://github.com/shanelbb">github</a> -
-                <a href="https://www.linkedin.com/in/shanelbeebe/">linkedin</a>
+                <a href="https://calendly.com/shanelbeebe">calendly</a>
               </p>
             </div>
             <div class="location-info">
@@ -244,5 +255,21 @@
         <p>&copy;2023 Shanel Beebe</p>
       </footer>
     </div>
+
+    <!-- Script for hamburger menu functionality -->
+    <script>
+      // select elements needed for events
+      const menuBar = document.querySelector(".bars");
+      const navBar = document.querySelector(".header-nav");
+      // toggles the nav menu open and closed when hamburger menu is clicked
+      menuBar.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+
+      // toggles menu closed when a link is clicked
+      navBar.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
