@@ -4,28 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shanel made this</title>
+    <title>
+      Shanel's Portfolio Website - Full Stack Web Development and Design
+      services.
+    </title>
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Mansalva&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome CDN -->
     <script
       src="https://kit.fontawesome.com/35da8f1ae7.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Lets screen reader users know that the link opens in a new window -->
+    <div hidden>
+      <span id="new-window-0">Opens in a new window</span>
+      <span id="new-window-1">Opens an external site</span>
+      <span id="new-window-2">Opens an external site in a new window</span>
+    </div>
+    <!-- container to constrain website proportions on larger screen widths -->
     <div class="wrapper">
+      <!-- START: header section -->
       <header>
         <span class="logo"><a href="#">sb_</a></span>
-        <div class="bars">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <!-- code for mobile menu icon. Hidden on desktop -->
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="header-nav">
           <ul>
@@ -36,56 +49,67 @@
           </ul>
         </nav>
       </header>
+      <!-- END: header section -->
+      <!-- START: main body content -->
       <main>
+        <!-- START: hero section -->
         <section class="hero">
-          <div class="hero-left">
-            <div class="hero-text">
+          <!-- container for left side of hero with text -->
+          <div class="hero-text">
+            <div class="header-heading">
               <span class="accent-text">hello!</span>
               <h1>I'm Shanel.</h1>
-              <h2>I build things for the web.</h2>
-              <p>Let's have a conversation!</p>
-              <div class="hero-btns">
-                <button class="contact-btn">
-                  <a href="mailto: shanelbb@gmail.com" target="_blank"
-                    >Reach out to me</a
-                  >
-                </button>
-                <button class="code-btn">
-                  <a href="#coding">See my work <span class="arrow">→</span></a>
-                </button>
-              </div>
-              <div class="hero-socials">
-                <p>Check Out My</p>
-                <nav class="social-icons">
-                  <span class="fa-brands fa-github"
-                    ><a href="https://github.com/shanelbb"></a
-                  ></span>
-                  <span class="fa-brands fa-linkedin-in"
-                    ><a href="https://www.linkedin.com/in/shanelbeebe/"></a
-                  ></span>
-                </nav>
-              </div>
+            </div>
+            <h2>I build things for the web.</h2>
+            <p>Let's have a conversation!</p>
+            <!-- container for hero buttons so they are side by side -->
+            <div class="hero-btns">
+              <button class="contact-btn">
+                <a href="mailto: shanelbb@gmail.com" target="_blank"
+                  >Reach out to me</a
+                >
+              </button>
+              <button class="code-btn">
+                <a href="#coding">See my work <span class="arrow">→</span></a>
+              </button>
+            </div>
+            <!-- container for social media links to sit in one line -->
+            <div class="hero-socials">
+              <p>Check me out here:</p>
+              <nav class="social-icons">
+                <span class="fa-brands fa-github"
+                  ><a href="https://github.com/shanelbb"></a
+                ></span>
+                <span class="fa-brands fa-linkedin-in"
+                  ><a href="https://www.linkedin.com/in/shanelbeebe/"></a
+                ></span>
+              </nav>
             </div>
           </div>
-
+          <!-- container for hero image -->
           <div class="hero-img">
             <img
               src="./assets/img/portfolio-hero-img.png"
-              alt="Profile photo of Shanel"
+              alt="Profile photo of Shanel with the quote: 'A quality website is not an expense, it's an investment.'"
             />
           </div>
         </section>
+        <!-- END: hero section -->
+
+        <!-- START: skills & experience section -->
         <section id="skills" class="skills-exp">
-          <div class="skills-exp-left">
+          <!-- container for left side of section: Skills-->
+          <article class="skills-exp-left">
             <span class="accent-text">what I can do</span>
             <h2 class="section-heading">Skills &</h2>
             <h2 class="section-heading">Experience</h2>
             <p>
               I've learned a lot during my education and career in tech. Here is
-              a sampling of some skills and experience I've picked up along the
-              way.
+              a sampling of some skills and experience I've picked up along
+              <span style="white-space: nowrap">the&nbsp;way.</span>
             </p>
             <h3>Skills</h3>
+            <!-- container for skills icons -->
             <div class="skills">
               <span>
                 <i class="fa-solid fa-code"></i>
@@ -112,8 +136,9 @@
                 <p>Graphic Design</p>
               </span>
             </div>
-          </div>
-          <div class="skills-exp-right">
+          </article>
+          <!-- container for right side of section: Experience -->
+          <article class="skills-exp-right">
             <h3>Experience</h3>
             <div class="experience-entry">
               <p class="dates">2023</p>
@@ -143,10 +168,14 @@
                 <p class="company">Geek Unicorn</p>
               </div>
             </div>
-          </div>
+          </article>
         </section>
+        <!-- END: skills & experience section -->
+
+        <!-- START: projects section -->
         <section id="coding" class="coding-projects">
-          <div class="project project-1">
+          <!-- container for project 1 with section heading -->
+          <article class="project project-1">
             <span class="accent-text">what i've done</span>
             <h2>
               Latest <br />
@@ -162,10 +191,14 @@
               ></a>
             </div>
             <a href="https://jolly-allen-1f982c.netlify.app/" target="_blank"
-              ><img src="./assets/img/filmRecsMU.png" alt=""
+              ><img
+                src="./assets/img/filmRecsMU.png"
+                alt="Laptop mockup of FilmRecs app."
             /></a>
-          </div>
-          <div class="project project-2">
+          </article>
+
+          <!-- container for project 2 -->
+          <article class="project project-2">
             <div class="project-title">
               <hgroup class="project-heading">
                 <h3>Guess That Color Web App</h3>
@@ -180,10 +213,14 @@
             <a
               href="https://shanelbb.github.io/shanelBeebeProjectThree/"
               target="_blank"
-              ><img src="./assets/img/guessThatColourMU.jpg" alt=""
+              ><img
+                src="./assets/img/guessThatColourMU.jpg"
+                alt="Desktop mockup of Guess That Colour app."
             /></a>
-          </div>
-          <div class="project project-3">
+          </article>
+
+          <!-- container for project 3 -->
+          <article class="project project-3">
             <div class="project-title">
               <hgroup class="project-heading">
                 <h3>Notice Board Web App</h3>
@@ -194,12 +231,17 @@
               ></a>
             </div>
             <a href="https://shanelbb.github.io/noticeBoard/" target="_blank"
-              ><img src="./assets/img/noticeBoardMU.jpg" alt=""
+              ><img
+                src="./assets/img/noticeBoardMU.jpg"
+                alt="Tablet and phone mockups of Notice Board app"
             /></a>
-          </div>
+          </article>
         </section>
+        <!-- END: projects section -->
+
+        <!-- START: graphic design feature section -->
         <section id="design" class="design-projects">
-          <div class="design-text">
+          <article class="design-text">
             <span class="accent-text">i design too</span>
             <h2>Graphic<br />Design</h2>
             <p>
@@ -208,33 +250,54 @@
               of design and became proficient in Adobe Creative Cloud
               applications. Early in my tech career, I worked as a jr. web
               designer where I learned how to build, update, and maintain
-              Wordpress websites.
+              <span style="white-space: nowrap">Wordpress&nbsp;websites.</span>
             </p>
-            <p>Ask me about my design work today!</p>
-          </div>
-          <div class="design-img">
-            <img src="./assets/img/dblExpBirds.jpg" alt="" />
-            <img src="./assets/img/artHouseMU.jpg" alt="" />
-            <img src="./assets/img/floataMU.jpg" alt="" />
-            <img src="./assets/img/nationMU.jpg" alt="" />
-          </div>
+            <p>
+              Ask me about my design
+              <span style="white-space: nowrap">work today!</span>
+            </p>
+          </article>
+          <aside class="design-img">
+            <img
+              src="./assets/img/dblExpBirds.jpg"
+              alt="Double exposer of man with trees and bird dissolving out of his head"
+            />
+            <img
+              src="./assets/img/artHouseMU.jpg"
+              alt="Stationary mockup of Art House logo design"
+            />
+            <img
+              src="./assets/img/floataMU.jpg"
+              alt="Business card mockup of Floata logo design"
+            />
+            <img
+              src="./assets/img/nationMU.jpg"
+              alt="Magazing mockup of Nation Magazine layout design."
+            />
+          </aside>
         </section>
         <section id="contact" class="contact">
-          <div class="contact-text">
+          <article class="contact-text">
             <span class="accent-text">say hi!</span>
             <h2>Let's Discuss<br />Your Project</h2>
             <div class="email-info">
-              <a href="mailto:shanelbb@gmail.com"
+              <a href="mailto:shanelbb@gmail.com" target="_blank"
                 ><i class="fa-solid fa-envelope"></i
               ></a>
-              <p><a href="mailto:shanelbb@gmail.com">shanelbb@gmail.com</a></p>
+              <p class="contact-link">
+                <a href="mailto:shanelbb@gmail.com" target="_blank"
+                  >shanelbb@gmail.com</a
+                >
+              </p>
             </div>
             <div class="social-info">
-              <a href="https://calendly.com/shanelbeebe"
+              <a href="https://calendly.com/shanelbeebe" target="_blank"
                 ><i class="fa-solid fa-calendar"></i
               ></a>
-              <p>
-                <a href="https://calendly.com/shanelbeebe">calendly</a>
+              <p class="contact-link">
+                <a href="https://calendly.com/shanelbeebe" target="_blank"
+                  >Calendly</a
+                >
               </p>
             </div>
             <div class="location-info">
@@ -244,31 +307,57 @@
                 Always open to remote work
               </p>
             </div>
-          </div>
-          <div class="contact-img">
-            <img src="./assets/img/contactImage.jpg" alt="" />
-          </div>
+          </article>
+          <figure class="contact-img">
+            <img
+              src="./assets/img/contactImage.jpg"
+              alt="Stock image of a laptop "
+            />
+          </figure>
         </section>
       </main>
+      <!-- END: main body content -->
+
+      <!-- START: footer content -->
       <footer>
-        <span class="logo"><a href="#">sb_</a></span>
+        <!-- <span class="logo"><a href="#">sb_</a></span> -->
+        <div class="footer-heading">
+          <span class="accent-text">thanks for visiting!</span>
+          <h2>Shanel Made This</h2>
+        </div>
         <p>&copy;2023 Shanel Beebe</p>
       </footer>
     </div>
 
-    <!-- Script for hamburger menu functionality -->
+    <!-- Script for mobile menu functionality -->
     <script>
       // select elements needed for events
-      const menuBar = document.querySelector(".bars");
+      const menuIcon = document.querySelector(".menu-icon");
       const navBar = document.querySelector(".header-nav");
-      // toggles the nav menu open and closed when hamburger menu is clicked
-      menuBar.addEventListener("click", () => {
+      const designClicked = document.querySelectorAll(".design-img img");
+
+      // toggles the nav menu open and closed when menu icon is clicked
+      menuIcon.addEventListener("click", () => {
         navBar.classList.toggle("open");
+        // toggles menu icon between bars and X when clicked
+        if (menuIcon.innerHTML.includes("fa-bars")) {
+          menuIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        } else {
+          menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
       });
 
       // toggles menu closed when a link is clicked
       navBar.addEventListener("click", () => {
         navBar.classList.toggle("open");
+        menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+
+      // toggles class to zoom clicked image
+      designClicked.forEach((img) => {
+        img.addEventListener("click", function () {
+          this.classList.toggle("design-hover");
+        });
       });
     </script>
   </body>

@@ -7,10 +7,7 @@
   --color3: #ffd800;
 }
 
-/* * {
-  border: 1px solid red;
-} */
-
+/* Sets root font-size to 10px */
 html {
   font-size: 67.5%;
 }
@@ -20,9 +17,17 @@ body {
   color: var(--black);
 }
 
+/* set max width of page contents */
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+/* default heading and paragraph styles */
+
+h1 {
+  font-size: 6rem;
+  margin: 0;
 }
 
 h2 {
@@ -65,7 +70,8 @@ header {
   font-size: 4rem;
 }
 
-.bars {
+/* nav menu icon for mobile layout */
+.menu-icon {
   display: none;
 }
 
@@ -81,6 +87,7 @@ header {
   font-size: 1.8rem;
 }
 
+/* css for bottom border hover effect */
 .header-nav ul li::after {
   display: block;
   content: "";
@@ -92,7 +99,8 @@ header {
   height: 3px;
 }
 
-.header-nav ul li:hover::after {
+.header-nav ul li:hover::after,
+.header-nav ul li:focus::after {
   content: "";
   display: block;
   border-bottom: 2px solid var(--color2);
@@ -108,7 +116,7 @@ header {
 }
 
 /* Hero section styles */
-
+/* default styles for accent text for each section */
 .accent-text {
   color: var(--color2);
   font-weight: bold;
@@ -122,16 +130,11 @@ header {
   justify-content: space-between;
 }
 
-.hero-left {
+.hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 30px;
-}
-
-.hero h1 {
-  font-size: 6rem;
-  margin: 0;
 }
 
 .hero h2 {
@@ -171,6 +174,7 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
+/* Animation code for button hover effect with webkit fallback code */
 @-webkit-keyframes borderIn {
   0% {
     border-top: 2px solid transparent;
@@ -285,7 +289,9 @@ header {
 }
 
 .contact-btn:hover,
-.code-btn:hover {
+.code-btn:hover,
+.contact-btn:focus,
+.code-btn:focus {
   -webkit-animation: borderIn 0.2s linear forwards;
   animation: borderIn 0.2s linear forwards;
 }
@@ -328,6 +334,7 @@ header {
   font-size: 2rem;
 }
 
+/* skills & experience section styles */
 .skills-exp {
   display: flex;
   background: var(--color3);
@@ -372,7 +379,6 @@ header {
 
 .skills p {
   text-align: center;
-  font-size: 1.6rem;
 }
 
 .experience-entry {
@@ -395,7 +401,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 60px 30px;
+  padding: 60px 60px;
 }
 
 .project {
@@ -424,10 +430,12 @@ header {
   box-shadow: 2px 0px 8px #838383;
 }
 
+/* project card expands on hover */
 .project:hover {
   width: 640px;
 }
 
+/* sets project 1 at bottom of container */
 .project-1 {
   align-self: flex-end;
 }
@@ -442,6 +450,7 @@ header {
   margin-top: 50px;
 }
 
+/* sets project card vertically centered */
 .project-2 {
   align-self: center;
 }
@@ -453,9 +462,10 @@ header {
   margin-top: 10px;
 }
 
+/* graphic design section styles */
 .design-projects {
   background-color: var(--color3);
-  padding: 60px 40px 60px 60px;
+  padding: 60px;
   display: flex;
   gap: 30px;
 }
@@ -492,12 +502,23 @@ header {
   box-shadow: 2px 0px 8px #838383;
 }
 
+/* styles for click event to zoom image */
+.design-img:hover {
+  position: relative;
+}
+.design-hover:hover {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  z-index: 1;
+}
+
+/* contact section styles */
 .contact {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 0;
 }
-
 .contact h2 {
   margin-top: 0;
   line-height: 1.3;
@@ -514,10 +535,20 @@ header {
 
 .contact-text p {
   margin-left: 30px;
+  transition: 0.3s;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  font-size: 1.8rem;
 }
 
 .contact-text a {
   color: var(--black);
+}
+.contact-text a:hover,
+.contact-text a:focus {
+  color: var(--color1);
 }
 
 .email-info,
@@ -533,7 +564,8 @@ header {
   justify-content: center;
   align-items: center;
   width: 50%;
-  padding: 50px;
+  padding: 60px;
+  margin: 0;
 }
 
 .contact-img img {
@@ -545,18 +577,23 @@ header {
   box-shadow: 2px 0px 8px #838383;
 }
 
+/* footer section styles */
 footer {
-  padding: 20px;
+  padding: 10px 20px;
   background-color: var(--color3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-footer .logo {
+/* heading container to keep accent text left aligned*/
+.footer-heading {
   margin: 0;
-  padding: 0;
+  padding: 20px 20px 0;
+}
+
+footer h2 {
+  margin: 0;
 }
 
 footer p {
@@ -576,7 +613,7 @@ footer p {
     flex-direction: column;
   }
 
-  .hero-left {
+  .hero-text {
     align-items: center;
     margin-top: 50px;
     padding: 30px 0;
@@ -586,7 +623,7 @@ footer p {
     flex-direction: column;
   }
 
-  .hero-left,
+  .hero-text,
   .hero-img {
     width: 100%;
   }
@@ -616,7 +653,6 @@ footer p {
   header {
     position: relative;
   }
-
   .logo {
     padding: 20px 30px;
   }
@@ -633,7 +669,6 @@ footer p {
     background: var(--color2);
     text-align: center;
   }
-
   .header-nav ul {
     display: flex;
     flex-direction: column;
@@ -650,20 +685,20 @@ footer p {
   .open {
     display: block;
   }
-
-  .bars {
+  .close {
+    display: none;
+  }
+  .menu-icon {
     position: absolute;
-    top: 20px;
-    right: 20px;
     display: block;
+    font-size: 3.5rem;
+    top: 12px;
+    right: 23px;
     margin: 20px;
   }
-  .bar {
-    width: 30px;
-    height: 5px;
-    background: var(--black);
-    border-radius: 5px;
-    margin-bottom: 5px;
+  .hero-text {
+    margin-top: 0;
+    padding: 0;
   }
   .hero-img {
     padding: 0;
@@ -673,13 +708,20 @@ footer p {
     padding: 30px;
     margin: 0;
   }
-
+  .skills-exp-left p {
+    max-width: 100%;
+  }
   .skills-exp-left,
   .skills-exp-right {
     width: 100%;
+    margin: 0;
   }
   .skills span {
     width: 48%;
+  }
+  .coding-projects,
+  .design-projects {
+    padding: 30px;
   }
   .design-projects {
     flex-direction: column;
@@ -689,8 +731,8 @@ footer p {
   .design-text,
   .design-img {
     width: 100%;
+    padding: 0 30px;
   }
-
   .contact-text {
     width: 50%;
   }
@@ -709,16 +751,19 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 30px 0;
+    padding: 30px;
   }
   .contact-text {
-    width: 90%;
-    padding: 30px 0;
+    width: 100%;
+    padding: 30px;
   }
   .contact-img {
-    width: 90%;
+    width: 100%;
     padding: 30px;
+  }
+
+  .contact-img img {
+    max-width: 100%;
   }
 }
 
@@ -726,9 +771,9 @@ footer p {
   .hero {
     padding-top: 0;
   }
-  .hero-left {
+  .hero-text {
     width: 80%;
-    padding: 30px 30px;
+    padding: 30px;
     margin-top: 0;
   }
   .hero-socials {
@@ -739,13 +784,14 @@ footer p {
   .social-icons span {
     padding: 20px;
   }
-  .design-projects {
-    padding: 30px 20px;
-  }
-  .design-text {
-    width: 90%;
+  .design-projects,
+  .contact-text {
+    padding: 30px;
   }
   .design-img img {
+    width: 100%;
+  }
+  .contact-text {
     width: 100%;
   }
   .contact-img {
