@@ -45,7 +45,7 @@ h4 {
 }
 
 h5 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 5px 0 0;
 }
 
@@ -54,18 +54,28 @@ p {
   line-height: 1.5;
 }
 
+/* default styles for accent text for each section */
+.accent-text {
+  color: var(--color2);
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
 header {
   width: 100%;
   max-width: 1280px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
   margin-bottom: 20px;
   background: var(--white);
   position: fixed;
+  z-index: 2;
 }
 
 .logo {
-  padding-top: 10px;
   padding-left: 30px;
 }
 
@@ -89,7 +99,8 @@ header {
 }
 
 .header-nav ul li {
-  padding: 10px;
+  margin: 0;
+  padding: 10px 10px 0;
   font-size: 1.8rem;
 }
 
@@ -122,14 +133,6 @@ header {
 }
 
 /* Hero section styles */
-/* default styles for accent text for each section */
-.accent-text {
-  color: var(--color2);
-  font-weight: bold;
-  margin: 0;
-  font-size: 1.2rem;
-}
-
 .hero {
   padding: 60px 0px 30px;
   display: flex;
@@ -152,27 +155,6 @@ header {
 .hero-img img {
   max-width: 640px;
   width: 100%;
-}
-
-.contact-btn,
-.code-btn {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 20px 20px 20px 0px;
-  transition: 0.5s;
-}
-
-.contact-btn::before,
-.code-btn::before {
-  content: "";
-  display: block;
-  top: 0px;
-  left: 0px;
-  border-top: 2px solid transparent;
-  border-radius: 5px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 /* Animation code for button hover effect with webkit fallback code */
@@ -285,6 +267,9 @@ header {
 .contact-btn,
 .code-btn {
   border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 20px 20px 0px;
   -webkit-animation: borderOut 0.2s;
   animation: borderOut 0.2s;
 }
@@ -300,6 +285,7 @@ header {
 .contact-btn {
   background-color: var(--color3);
 }
+
 .code-btn {
   background-color: var(--white);
 }
@@ -322,7 +308,7 @@ header {
 
 .social-icons {
   margin: 0 60px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--black);
 }
 
@@ -332,20 +318,20 @@ header {
 }
 
 .social-icons span:hover {
-  font-size: 2rem;
+  color: var(--color1);
 }
 
 /* skills & experience section styles */
 .skills-exp {
   display: flex;
   background: var(--color3);
-  padding: 30px;
+  padding: 30px 30px 15px;
 }
 
 .skills-exp-left,
 .skills-exp-right {
   width: 50%;
-  margin: 30px;
+  margin: 30px 30px 0px;
 }
 
 .section-heading {
@@ -380,6 +366,7 @@ header {
 
 .skills p {
   text-align: center;
+  margin: 15px 0;
 }
 
 .experience-entry {
@@ -603,7 +590,7 @@ footer h2 {
 
 footer p {
   color: var(--black);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* Media Queries */
@@ -708,7 +695,7 @@ footer p {
     width: 90%;
   }
   .skills-exp {
-    padding: 30px;
+    padding: 30px 30px 10px;
     margin: 0;
   }
   .skills-exp-left p {
@@ -738,10 +725,12 @@ footer p {
   }
   .contact-text {
     width: 50%;
+    padding: 30px;
   }
   .contact-img {
     background: none;
     width: 50%;
+    padding: 30px;
   }
   .contact-img img {
     height: 350px;
@@ -754,17 +743,18 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0 30px;
   }
   .contact-text {
     width: 100%;
-    padding: 30px;
+  }
+  .location-info p {
+    margin-bottom: 0;
   }
   .contact-img {
     width: 100%;
-    padding: 30px;
+    padding-top: 0;
   }
-
   .contact-img img {
     max-width: 100%;
   }
