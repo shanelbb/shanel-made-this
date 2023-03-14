@@ -259,18 +259,22 @@
           </article>
           <aside class="design-img">
             <img
+              class="design-item"
               src="./assets/img/dblExpBirds.jpg"
               alt="Double exposer of man with trees and bird dissolving out of his head"
             />
             <img
+              class="design-item"
               src="./assets/img/artHouseMU.jpg"
               alt="Stationary mockup of Art House logo design"
             />
             <img
+              class="design-item"
               src="./assets/img/floataMU.jpg"
               alt="Business card mockup of Floata logo design"
             />
             <img
+              class="design-item"
               src="./assets/img/nationMU.jpg"
               alt="Magazine mockup of Nation Magazine layout design."
             />
@@ -323,7 +327,7 @@
         <!-- <span class="logo"><a href="#">sb_</a></span> -->
         <div class="footer-heading">
           <span class="accent-text">thanks for visiting!</span>
-          <h2>Shanel Made This</h2>
+          <h5>Shanel Made This</h5>
         </div>
         <p>&copy;2023 Shanel Beebe</p>
       </footer>
@@ -334,8 +338,10 @@
       // select elements needed for events
       const menuIcon = document.querySelector(".menu-icon");
       const navBar = document.querySelector(".header-nav");
+      const designImages = document.querySelector(".design-img");
       const designClicked = document.querySelectorAll(".design-img img");
-
+      const projSection = document.querySelector(".coding-projects");
+      const projects = document.querySelectorAll(".project");
       // toggles the nav menu open and closed when menu icon is clicked
       menuIcon.addEventListener("click", () => {
         navBar.classList.toggle("open");
@@ -346,17 +352,16 @@
           menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
         }
       });
-
       // toggles menu closed when a link is clicked
       navBar.addEventListener("click", () => {
         navBar.classList.toggle("open");
         menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
       });
-
       // toggles class to zoom clicked image
       designClicked.forEach((img) => {
         img.addEventListener("click", function () {
-          this.classList.toggle("design-hover");
+          designImages.classList.toggle("pos-rel");
+          this.classList.toggle("design-click");
         });
       });
     </script>
