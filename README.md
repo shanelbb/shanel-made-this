@@ -12,12 +12,12 @@ _Click on image to view site_
 - HTML5
 - CSS3
 - JavaScript
-- Google Fonts
-- Font Awesome
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ### Features & Functionality
 
-- Fixed header for easy navigation of&nbsp;tsite
+- Fixed header for easy navigation of&nbsp;site
 - Hover animations on&nbsp;buttons
 - Hover effects on links and project&nbsp;cards
 - Click to zoom on design section&nbsp;images
