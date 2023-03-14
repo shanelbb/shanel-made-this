@@ -590,6 +590,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 /* heading container to keep accent text left aligned*/
 .footer-heading {
   margin: 0;
@@ -616,7 +617,6 @@ footer p {
     display: flex;
     flex-direction: column;
   }
-
   .hero-text {
     align-items: center;
     margin-top: 50px;
@@ -626,7 +626,6 @@ footer p {
     display: flex;
     flex-direction: column;
   }
-
   .hero-text,
   .hero-img {
     width: 100%;

@@ -17,7 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Mansalva&display=swap"
       rel="stylesheet"
     />
-
     <!-- Font Awesome CDN -->
     <script
       src="https://kit.fontawesome.com/35da8f1ae7.js"
@@ -70,7 +69,9 @@
                 >
               </button>
               <button class="code-btn">
-                <a href="#coding">See my work <span class="arrow">→</span></a>
+                <a href="#coding"
+                  >See my work <i class="fa-solid fa-arrow-right"></i
+                ></a>
               </button>
             </div>
             <!-- container for social media links to sit in one line -->
@@ -333,37 +334,7 @@
       </footer>
     </div>
 
-    <!-- Script for mobile menu functionality -->
-    <script>
-      // select elements needed for events
-      const menuIcon = document.querySelector(".menu-icon");
-      const navBar = document.querySelector(".header-nav");
-      const designImages = document.querySelector(".design-img");
-      const designClicked = document.querySelectorAll(".design-img img");
-      const projSection = document.querySelector(".coding-projects");
-      const projects = document.querySelectorAll(".project");
-      // toggles the nav menu open and closed when menu icon is clicked
-      menuIcon.addEventListener("click", () => {
-        navBar.classList.toggle("open");
-        // toggles menu icon between bars and X when clicked
-        if (menuIcon.innerHTML.includes("fa-bars")) {
-          menuIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-        } else {
-          menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
-        }
-      });
-      // toggles menu closed when a link is clicked
-      navBar.addEventListener("click", () => {
-        navBar.classList.toggle("open");
-        menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
-      });
-      // toggles class to zoom clicked image
-      designClicked.forEach((img) => {
-        img.addEventListener("click", function () {
-          designImages.classList.toggle("pos-rel");
-          this.classList.toggle("design-click");
-        });
-      });
-    </script>
+    <!-- Script for mobile menu functionality & design images zoom -->
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
