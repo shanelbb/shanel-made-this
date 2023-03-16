@@ -312,12 +312,13 @@ header {
   color: var(--black);
 }
 
-.social-icons span {
+.social-icons a {
   padding: 0 30px 0 0;
   transition: 0.2s;
+  color: var(--black);
 }
 
-.social-icons span:hover {
+.social-icons a:hover {
   color: var(--color1);
 }
 
@@ -386,7 +387,6 @@ header {
 
 /* Project Section Styles */
 .coding-projects {
-  /* display: flex; */
   display: flex;
   justify-content: center;
   gap: 30px;
