@@ -28,14 +28,14 @@
       <span id="new-window-2">Opens an external site in a new window</span>
     </div>
     <!-- container to constrain website proportions on larger screen widths -->
-    <div class="wrapper">
-      <!-- START: header section -->
-      <header>
+    <!-- START: header section -->
+    <header>
+      <div class="header-wrapper">
         <span class="logo"><a href="#">sb_</a></span>
         <!-- code for mobile menu icon. Hidden on desktop -->
-        <div class="menu-icon">
+        <button class="menu-icon">
           <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
         <nav class="header-nav">
           <ul>
             <li><a href="#skills">Skills & Experience</a></li>
@@ -44,32 +44,30 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
       <!-- END: header section -->
       <!-- START: main body content -->
-      <main>
+  <main>
         <!-- START: hero section -->
+      <div class="wrapper">
         <section class="hero">
           <!-- container for left side of hero with text -->
           <div class="hero-text">
             <div class="header-heading">
-              <span class="accent-text">hello!</span>
+              <span class="accent-text" title="hello!">hello!</span>
               <h1>I'm Shanel.</h1>
             </div>
             <h2>I build things for the web.</h2>
             <p>Let's have a conversation!</p>
             <!-- container for hero buttons so they are side by side -->
             <div class="hero-btns">
-              <button class="contact-btn">
-                <a href="mailto: shanelbb@gmail.com" target="_blank"
+                <a class="contact-btn" href="mailto: shanelbb@gmail.com" target="_blank"
                   >Reach out to me</a
                 >
-              </button>
-              <button class="code-btn">
-                <a href="#coding"
+                <a class="code-btn" href="#coding"
                   >See my work <i class="fa-solid fa-arrow-right"></i
                 ></a>
-              </button>
             </div>
             <!-- container for social media links to sit in one line -->
             <div class="hero-socials">
@@ -95,12 +93,14 @@
           </div>
         </section>
         <!-- END: hero section -->
-
+      </div>
         <!-- START: skills & experience section -->
+    <div class="yellowbg">
+      <div class="wrapper">
         <section id="skills" class="skills-exp">
           <!-- container for left side of section: Skills-->
           <article class="skills-exp-left">
-            <span class="accent-text">what I can do</span>
+            <span class="accent-text" title="what i can do">what i can do</span>
             <h2 class="section-heading">Skills &</h2>
             <h2 class="section-heading">Experience</h2>
             <p>
@@ -170,13 +170,15 @@
             </div>
           </article>
         </section>
+      </div>
+    </div>
         <!-- END: skills & experience section -->
-
+      <div class="wrapper">
         <!-- START: projects section -->
         <section id="coding" class="coding-projects">
           <!-- container for project 1 with section heading -->
           <article class="project project-1">
-            <span class="accent-text">what i've done</span>
+            <span class="accent-text" title="what i've done">what i've done</span>
             <h2>
               Latest <br />
               Projects
@@ -236,13 +238,16 @@
                 alt="Tablet and phone mockups of Notice Board app"
             /></a>
           </article>
-        </section>
+        </section>              
+      </div>
         <!-- END: projects section -->
 
         <!-- START: graphic design feature section -->
+    <div class="yellowbg">
+      <div class="wrapper">
         <section id="design" class="design-projects">
           <article class="design-text">
-            <span class="accent-text">i design too</span>
+            <span class="accent-text" title="i design too">i design too</span>
             <h2>Graphic<br />Design</h2>
             <p>
               I received a diploma in Graphic Design and Interactive Media from
@@ -280,9 +285,12 @@
             />
           </aside>
         </section>
+      </div>
+    </div>
+      <div class="wrapper">
         <section id="contact" class="contact">
           <article class="contact-text">
-            <span class="accent-text">say hi!</span>
+            <span class="accent-text" title="say hi!">say hi!</span>
             <h2>Let's Discuss<br />Your Project</h2>
             <div class="email-info">
               <a href="mailto:shanelbb@gmail.com" target="_blank"
@@ -319,14 +327,16 @@
             />
           </figure>
         </section>
-      </main>
+      </div>
+    
+  </main>
       <!-- END: main body content -->
 
       <!-- START: footer content -->
       <footer>
         <!-- <span class="logo"><a href="#">sb_</a></span> -->
         <div class="footer-heading">
-          <span class="accent-text">thanks for visiting!</span>
+          <span class="accent-text" title="thanks for visiting!">thanks for visiting!</span>
           <h5>Shanel Made This</h5>
         </div>
         <p>&copy;2023 Shanel Beebe</p>
