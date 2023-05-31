@@ -290,6 +290,10 @@ header {
   }
 }
 
+.hero-btns {
+  padding-top: 20px;
+}
+
 .contact-btn,
 .code-btn {
   border: 2px solid transparent;
@@ -632,7 +636,7 @@ footer p {
   }
   .hero-text {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 75px;
     padding: 30px 0;
   }
   .hero-text {
@@ -765,6 +769,12 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
   .contact {
     flex-direction: column;
     justify-content: center;
