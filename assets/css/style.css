@@ -73,6 +73,7 @@ p {
 
 header {
    width: 100%;
+   max-width: 100vw;
    height: 80px;
    margin: 0;
    display: flex;
@@ -82,13 +83,13 @@ header {
 }
 
 .header-wrapper {
-  width: 100%;
+  width: 100vw;
   max-width: 1280px;
+  margin: 0 auto 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  margin-bottom: 20px;
   background: var(--white);
   position: fixed;
   z-index: 2;
