@@ -775,6 +775,10 @@ footer p {
     padding-bottom: 20px;
     padding-top: 0;
   }
+
+  .hero-btns a {
+    margin-right: 0;
+  }
   .contact {
     flex-direction: column;
     justify-content: center;
@@ -809,10 +813,21 @@ footer p {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 0;
   }
+
+  .social-icons {
+    margin: 0;
+  }
+
+  .social-icons a {
+    padding: 0px;
+  }
+
   .social-icons span {
     padding: 20px;
   }
+
   .design-projects,
   .contact-text {
     padding: 30px;
