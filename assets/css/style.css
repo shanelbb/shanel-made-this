@@ -37,6 +37,7 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 
 h4 {
@@ -74,13 +75,14 @@ p {
 header {
   width: 100%;
   max-width: 100vw;
-  height: 80px;
+  height: 90px;
   margin: 0;
   display: flex;
   justify-content: center;
   background: var(--white);
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 .header-wrapper {
@@ -116,7 +118,7 @@ header {
 }
 
 .menu-icon:focus {
-  border: 3px solid #115fcc;
+  border: 3px solid var(--color2);
   border-radius: 5px;
 }
 
@@ -437,10 +439,26 @@ header {
   justify-content: space-between;
 }
 
-.project-title a {
+.project-heading {
+  margin: 20px 0;
+}
+.project-link-icon {
+  padding: 30px 30px 20px;
+}
+
+.project-link-icon i {
   color: var(--color1);
   font-size: 2.5rem;
-  padding: 30px;
+  transition: 0.3s all ease-in;
+}
+
+.project-link-icon i:hover,
+.project-link-icon i:focus {
+  color: var(--color2);
+}
+
+.project p {
+  margin: 0 0 20px;
 }
 
 .project img {
@@ -453,7 +471,7 @@ header {
 }
 
 /* project card expands on hover */
-.project:hover {
+.expand {
   width: 640px;
 }
 
@@ -518,7 +536,7 @@ header {
 
 .design-item {
   width: calc(50% - 20px);
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 2px 0px 8px #838383;
@@ -528,6 +546,7 @@ header {
 .pos-rel {
   position: relative;
 }
+
 .design-click {
   position: absolute;
   width: 100%;
@@ -562,13 +581,9 @@ header {
   transition: 0.3s;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-  font-size: 1.8rem;
-}
-
 .contact-text a {
   color: var(--black);
+  transition: 0.3s all ease-in-out;
 }
 .contact-text a:hover,
 .contact-text a:focus {
@@ -581,6 +596,18 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.email-info a i,
+.social-info a i,
+.location-info a i {
+  transition: 0.3s all;
+}
+
+.email-info a i:hover,
+.social-info a i:hover,
+.location-info a i:hover {
+  color: var(--color2);
 }
 
 .contact-img {
@@ -834,6 +861,7 @@ footer p {
   .contact-text {
     padding: 30px;
   }
+
   .design-img img {
     width: 100%;
   }
