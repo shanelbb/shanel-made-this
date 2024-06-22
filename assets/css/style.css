@@ -480,18 +480,61 @@ span.skills-hide {
   margin: 0 0 20px;
 }
 
+.project-details {
+  position: relative;
+}
+
+.project-details p {
+  padding: 0px 20px 20px;
+  margin: 0;
+}
+
+p.project-blurb {
+  font-style: italic;
+  margin: 0;
+  padding: 20px 20px 10px;
+}
+
 .project img {
   width: 100%;
-  height: 300px;
+  height: 325px;
   object-fit: cover;
   transition: 0.3s;
   border-radius: 5px;
   box-shadow: 2px 0px 8px #838383;
 }
 
+.project-2 img {
+  object-position: 20% 20%;
+}
+
 /* project card expands on hover */
 .expand {
   width: 640px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+  color: #f1f1f1; /* White text */
+  width: 100%;
+  height: 325px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.project-details:hover .project-description {
+  opacity: 1;
 }
 
 .expand img {
