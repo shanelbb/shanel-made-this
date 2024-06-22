@@ -27,32 +27,43 @@ body {
 
 h1 {
   font-size: 6rem;
+  line-height: 1;
   margin: 0;
 }
 
 h2 {
   font-size: 2.5rem;
-  margin: 10px 0;
+  margin: 0;
+  padding-bottom: 20px;
+  line-height: 1.3;
 }
 
 h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h4 {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
 
-h4 {
+h5 {
   font-size: 1.6rem;
   margin: 0;
-}
-
-h5 {
-  font-size: 2rem;
-  margin: 5px 0 0;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 1.5;
+  margin: 0;
+}
+
+#skills,
+#coding,
+#design,
+#contact {
+  scroll-margin-top: 100px;
 }
 
 /* default styles for accent text for each section */
@@ -177,6 +188,14 @@ header {
   padding: 30px;
 }
 
+.hero-text h2 {
+  padding: 20px 0 10px;
+}
+
+.hero-text p {
+  padding: 10px 0px 5px;
+}
+
 .hero-img {
   width: 50%;
   max-width: 640px;
@@ -295,16 +314,15 @@ header {
   }
 }
 
-/* .hero-btns {
-  padding-top: 20px;
-} */
+.hero-btns {
+  padding: 20px 0;
+}
 
 .contact-btn,
 .code-btn {
   border: 2px solid transparent;
   border-radius: 5px;
   padding: 10px;
-  margin: 20px 20px 20px 0px;
   -webkit-animation: borderOut 0.2s;
   animation: borderOut 0.2s;
 }
@@ -328,22 +346,26 @@ header {
 .contact-btn,
 .code-btn {
   font-size: 1.4rem;
+  line-height: 1;
   text-decoration: none;
   color: var(--black);
 }
 
 .hero-socials {
   display: flex;
-  padding: 40px 0;
+  margin: 20px 0;
+  align-items: center;
 }
 
 .hero-socials p {
   margin: 0;
+  padding: 0;
 }
 
 .social-icons {
   margin: 0 60px;
   font-size: 2rem;
+  line-height: 1.5;
   color: var(--black);
 }
 
@@ -361,7 +383,7 @@ header {
 .skills-exp {
   display: flex;
   background: var(--color3);
-  padding: 30px 30px 15px;
+  padding: 30px 30px;
 }
 
 .skills-exp-left,
@@ -370,29 +392,26 @@ header {
   margin: 30px 30px 0px;
 }
 
-.section-heading {
-  font-size: 2.5rem;
-  margin: 5px 0 0;
-}
-
-.skills-exp-left p {
-  max-width: 75%;
-  padding-bottom: 30px;
-}
-
 .skills {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 125px repeat(auto-fill, 125px);
+  gap: 10px;
   justify-content: center;
+  align-items: center;
   padding: 30px 0 0;
 }
 
 .skills span {
-  width: 33%;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+span.skills-hide {
+  display: none;
 }
 
 .skills i {
@@ -402,12 +421,12 @@ header {
 
 .skills p {
   text-align: center;
-  margin: 15px 0;
+  margin: 20px 0 30px;
 }
 
 .experience-entry {
   display: flex;
-  padding: 20px 0;
+  padding: 20px 0 10px;
   border-top: 2px solid var(--black);
 }
 
@@ -475,15 +494,13 @@ header {
   width: 640px;
 }
 
+.expand img {
+  object-position: 0px 0px;
+}
+
 /* sets project 1 at bottom of container */
 .project-1 {
   align-self: flex-end;
-}
-
-.project-1 h2 {
-  margin: 0;
-  padding-bottom: 20px;
-  line-height: 1.3;
 }
 
 .project-1 .project-title {
@@ -513,11 +530,6 @@ header {
 .design-text {
   width: 40%;
   padding-right: 30px;
-}
-
-.design-text h2 {
-  margin-top: 0;
-  line-height: 1.3;
 }
 
 .design-text a {
@@ -562,10 +574,6 @@ header {
   justify-content: space-between;
   margin: 0;
 }
-.contact h2 {
-  margin-top: 0;
-  line-height: 1.3;
-}
 
 .contact-text {
   padding: 60px 30px 60px 60px;
@@ -585,17 +593,24 @@ header {
   color: var(--black);
   transition: 0.3s all ease-in-out;
 }
+
 .contact-text a:hover,
 .contact-text a:focus {
   color: var(--color1);
 }
 
-.email-info,
+.email-info {
+  display: flex;
+  padding: 15px 0 0;
+}
 .social-info,
 .location-info {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding: 30px 0 0;
+}
+
+.location-info i {
+  padding-top: 5px;
 }
 
 .email-info a i,
@@ -630,7 +645,7 @@ header {
 
 /* footer section styles */
 footer {
-  padding: 10px 20px;
+  padding: 30px 20px;
   background-color: var(--color3);
   display: flex;
   flex-direction: column;
@@ -641,19 +656,28 @@ footer {
 /* heading container to keep accent text left aligned*/
 .footer-heading {
   margin: 0;
-  padding: 20px 20px 0;
-}
-
-footer h2 {
-  margin: 0;
+  padding: 0px 20px;
 }
 
 footer p {
   color: var(--black);
   font-size: 1.4rem;
+  margin: 0;
+  padding: 10px 20px 0px;
 }
 
 /* Media Queries */
+@media screen and (max-width: 1240px) {
+  span.skills-hide {
+    display: block;
+  }
+}
+@media screen and (max-width: 969px) {
+  .skills {
+    grid-template-columns: 110px repeat(auto-fill, 110px);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -689,6 +713,9 @@ footer p {
     width: 90%;
     max-width: 800px;
   }
+  .skills {
+    grid-template-columns: 175px repeat(auto-fill, 175px);
+  }
   .coding-projects {
     flex-direction: column;
   }
@@ -697,6 +724,16 @@ footer p {
   }
   .project:hover {
     width: 100%;
+  }
+  .design-projects {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .design-text,
+  .design-img {
+    width: 100%;
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -755,7 +792,7 @@ footer p {
     width: 90%;
   }
   .skills-exp {
-    padding: 30px 30px 10px;
+    padding: 60px 30px 50px;
     margin: 0;
   }
   .skills-exp-left p {
@@ -766,14 +803,11 @@ footer p {
     width: 100%;
     margin: 0;
   }
-  .skills span {
-    width: 48%;
-  }
   .coding-projects,
   .design-projects {
-    padding: 30px;
+    padding: 60px 30px;
   }
-  .design-projects {
+  /* .design-projects {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -782,15 +816,15 @@ footer p {
   .design-img {
     width: 100%;
     padding: 0 30px;
-  }
+  } */
   .contact-text {
     width: 50%;
-    padding: 30px;
+    padding: 60px 30px;
   }
   .contact-img {
     background: none;
     width: 50%;
-    padding: 30px;
+    padding: 30px 30px 30px 0px;
   }
   .contact-img img {
     height: 350px;
@@ -798,16 +832,22 @@ footer p {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 604px) {
   .hero-btns {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 0;
   }
-
   .hero-btns a {
     margin-right: 0;
+  }
+
+  .contact-btn {
+    margin: 10px 0;
+  }
+  span.skills-hide {
+    display: none;
   }
   .contact {
     flex-direction: column;
@@ -856,10 +896,8 @@ footer p {
   .social-icons span {
     padding: 20px;
   }
-
-  .design-projects,
-  .contact-text {
-    padding: 30px;
+  .skills {
+    grid-template-columns: 150px repeat(auto-fill, 150px);
   }
 
   .design-img img {
@@ -870,12 +908,6 @@ footer p {
   }
   .contact-img {
     display: none;
-  }
-  footer {
-    padding: 10px;
-  }
-  footer span {
-    font-size: 3rem;
   }
   footer p {
     font-size: 1.2rem;
