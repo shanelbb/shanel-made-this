@@ -59,6 +59,10 @@ p {
   margin: 0;
 }
 
+.pb-30 {
+  padding-bottom: 30px;
+}
+
 #skills,
 #coding,
 #design,
@@ -69,10 +73,11 @@ p {
 /* default styles for accent text for each section */
 .accent-text {
   color: var(--color2);
+  padding-top: 10px;
   font-weight: bold;
-  margin: 0;
   font-size: 1.2rem;
   transition: all 0.3s ease;
+  cursor: default;
 }
 
 .accent-text:hover {
@@ -398,7 +403,7 @@ header {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 30px 0 0;
+  padding: 0px 0 0;
 }
 
 .skills span {
@@ -462,7 +467,7 @@ span.skills-hide {
   margin: 20px 0;
 }
 .project-link-icon {
-  padding: 30px 30px 20px;
+  padding: 30px 0px 20px 30px;
 }
 
 .project-link-icon i {
@@ -573,6 +578,10 @@ p.project-blurb {
 .design-text {
   width: 40%;
   padding-right: 30px;
+}
+
+.design-text p {
+  padding-bottom: 1.5rem;
 }
 
 .design-text a {
