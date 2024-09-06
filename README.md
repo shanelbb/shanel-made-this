@@ -2,7 +2,7 @@
 
 ### Description
 
-A website to showcase my skills, experience, and work as a web developer and graphic designer. I would like to start doing freelance work and this website will allow potential clients to see what I can offer&nbsp;them.
+A website to showcase my skills, experience, and experience, education and work as a web developer and graphic designer.
 
 _Click on image to view site_
 [![Hero Screenshot](/assets/img/shanel-made-this-hero.jpg) ](https://shanelmadethis.com/)
