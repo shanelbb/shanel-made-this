@@ -2,9 +2,10 @@
 
 ### Description
 
-A website to showcase my skills, experience, and experience, education and work as a web developer and graphic designer.
+A website to showcase my skills, experience, education, and work as a web developer and graphic designer.
 
 _Click on image to view site_
+
 [![Hero Screenshot](/assets/img/shanel-made-this-hero.jpg) ](https://shanelmadethis.com/)
 
 ### Tools I Used:
